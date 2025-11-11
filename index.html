@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alenox — Engineering Solutions & Technology Services</title>
+  <meta name="description" content="Alenox — a technology partner providing innovative solutions and digital transformation services across domains." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#7c3aed; --glass: rgba(255,255,255,0.04);
+      --container:1100px; font-family: 'Inter', sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#081027 0%, #071022 100%); color:#e6eef8; -webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--container); margin:0 auto; padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .kicker{color:var(--accent);font-weight:700;display:inline-block;margin-bottom:12px}
+    h1{font-size:38px;line-height:1.05;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);border:none;padding:12px 16px;border-radius:10px;color:white;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px}
+    .card h3{margin:0 0 8px}
+
+    footer{border-top:1px solid rgba(255,255,255,0.03);padding-top:18px;margin-top:36px;color:var(--muted)}
+
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.cards{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.cards{grid-template-columns:1fr}nav{display:none}header{padding:12px}h1{font-size:28px}}
+
+    .muted{color:var(--muted)}
+    .contact-card{background:linear-gradient(180deg, rgba(124,58,237,0.08), rgba(59,130,246,0.03));padding:18px;border-radius:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:800">Alenox</div>
+          <div class="muted" style="font-size:12px">Technology · Innovation · Delivery</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">Engineering-first · Outcome-focused</div>
+        <h1>We deliver innovative technology solutions that empower organizations</h1>
+        <p class="lead">Our team of developers, architects, QA and support engineers build scalable systems and help businesses modernize their technology landscape.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Talk to us</a>
+          <a class="btn ghost" href="#services">Our Services</a>
+        </div>
+
+        <div class="cards" aria-hidden>
+          <div class="card">
+            <h3>Expertise</h3>
+            <div class="muted">Software delivery, cloud, data, automation, and integration.</div>
+          </div>
+          <div class="card">
+            <h3>Approach</h3>
+            <div class="muted">Engineering excellence with agility and quality focus.</div>
+          </div>
+          <div class="card">
+            <h3>Focus</h3>
+            <div class="muted">Customer success through reliable and scalable solutions.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="contact-card">
+        <h3 style="margin-top:0">Quick brief</h3>
+        <p class="muted">Need a discovery call or an RFQ? Share your scope, and we’ll respond within 24 hours.</p>
+        <div style="margin-top:12px">
+          <div class="muted" style="font-size:13px">Email</div>
+          <div style="font-weight:700">hello@alenox.in</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2 style="margin-top:0">About Alenox</h2>
+      <p class="muted">Alenox is a modern technology partner — combining domain knowledge, strong engineering culture, and customer-first mindset. We build software, integrate systems, and deliver technology that accelerates business outcomes.</p>
+    </section>
+
+    <section id="services" style="margin-top:26px">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Product Engineering</h3>
+          <p class="muted">From concept to code — full-stack design, development, and testing.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud & Platform</h3>
+          <p class="muted">Cloud-native solutions, CI/CD, infrastructure automation, and DevOps.</p>
+        </div>
+        <div class="card">
+          <h3>Data & Insights</h3>
+          <p class="muted">Data engineering, analytics, automation, and integration pipelines.</p>
+        </div>
+        <div class="card">
+          <h3>Support & Maintenance</h3>
+          <p class="muted">Application reliability, QA, observability, and continuous improvement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="careers" style="margin-top:28px">
+      <h2>Careers</h2>
+      <p class="muted">We’re growing. Join a team of passionate engineers building impactful solutions. Email <strong>careers@alenox.in</strong> with your profile.</p>
+    </section>
+
+    <section id="contact" style="margin-top:28px">
+      <h2>Contact</h2>
+      <p class="muted">Tell us about your project — scope, timeline, and goals. We’ll get back within 24 hours.</p>
+      <form onsubmit="event.preventDefault(); alert('Thanks! Please email hello@alenox.in with details.');">
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <input required placeholder="Your name" style="flex:1;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+          <input required placeholder="Email" style="flex:1;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" />
+        </div>
+        <textarea required placeholder="Short project description" rows="5" style="width:100%;margin-top:10px;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <div style="margin-top:8px"><button class="btn" type="submit">Send brief</button></div>
+      </form>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>© Alenox 2025 · Engineering with purpose</div>
+        <div class="muted">Privacy · Terms</div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
